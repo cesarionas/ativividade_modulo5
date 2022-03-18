@@ -73,7 +73,7 @@ export default function Create() {
       <input type="text" id="Preco" className="form-control" placeholder="Preco" value={preco} onChange={(e) => setPreco(e.target.value)}/>
     </div>
     </div>
-    <button type="submit" className="btn btn-primary" onClick={(e)=> criarOuEditarDestino(e)}>Submit</button>
+    <button type="submit" className="btn btn-primary" onClick={(e)=> criarOuEditarDestino(e)}>Enviar</button>
     <Link to="Autores" className="btn btn-danger" style={{marginLeft:"10px"}}>Cancelar</Link>
   </fieldset>
 </form>
