@@ -1,0 +1,417 @@
+{
+	"info": {
+		"_postman_id": "eeb87230-0088-4857-99a7-193b700ab0af",
+		"name": "AgenciaDeViagens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"cpf\": \"11111\",\r\n    \"email\": \"sim@gmail.com\",\r\n    \"nome\": \"Carlos\",\r\n    \"sobrenome\": \"Jones\",\r\n    \"telefone\": \"11111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET clientes por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"cpf\": \"11111\",\r\n    \"email\": \"sim@gmail.com\",\r\n    \"nome\": \"Carlos\",\r\n    \"sobrenome\": \"Jones\",\r\n    \"telefone\": \"11111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Manuel\",\r\n        \"sobrenome\": \"Jones\",\r\n        \"cpf\": \"2222\",\r\n        \"telefone\": \"2222222\",\r\n        \"email\": \"isso@gmail.com\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT clientes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Carlos\",\r\n        \"sobrenome\": \"Bones\",\r\n        \"cpf\": \"3333\",\r\n        \"telefone\": \"2222222\",\r\n        \"email\": \"puts@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"destino_promo\": \"EUA\",\r\n        \"urlImage\": \"https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square-grid-m.jpg\",\r\n        \"descricao_promo\": \"Promoção imperdivel New York\",\r\n        \"preco_promo\": \"200.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/promocoes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"promocoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST promocoes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"destino_promo\": \"EUA\",\r\n        \"urlImage\": \"https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square-grid-m.jpg\",\r\n        \"descricao_promo\": \"Promoção imperdivel New York\",\r\n        \"preco_promo\": \"200.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/promocoes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"promocoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET promocoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/promocoes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"promocoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET pelo ID promocoes ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/promocoes/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"promocoes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT promocoes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"destino_promo\": \"EUA\",\r\n    \"urlImage\": \"https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square-grid-m.jpg\",\r\n    \"descricao_promo\": \"Promoção imperdivel New York\",\r\n    \"preco_promo\": \"200.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/promocoes/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"promocoes",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE promocoes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/promocoes/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"promocoes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET pacotes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacotes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacotes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET pacotes por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pacotes/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacotes",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST pacotes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"destino\": \"New York\",\r\n        \"urlImage\": \"https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square-grid-m.jpg\",\r\n        \"preco\": \"250.0\",\r\n        \"descricao_destino\": \"Lugar bélissimo \",\r\n        \"promocao\": {\r\n            \"destino_promo\": \"EUA\",\r\n            \"urlImage\": \"https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square-grid-m.jpg\",\r\n            \"descricao_promo\": \"Promoção imperdivel New York\",\r\n            \"preco_promo\": \"200.00\",\r\n            \"id_promo\": 1\r\n        },\r\n        \"cliente\": {\r\n            \"nome\": \"Carlos\",\r\n            \"sobrenome\": \"Bones\",\r\n            \"cpf\": \"3333\",\r\n            \"telefone\": \"2222222\",\r\n            \"email\": \"puts@gmail.com\",\r\n            \"id_cliente\": 2\r\n        }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacotes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacotes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE pacotes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacotes/24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacotes",
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT pacotes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"destino\": \"New York\",\r\n        \"urlImage\": \"https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square-grid-m.jpg\",\r\n        \"preco\": \"250.0\",\r\n        \"descricao_destino\": \"Lugar bélissimo \",\r\n        \"clientes\": {\r\n           \"nome\": \"Manuel\",\r\n           \"sobrenome\": \"Jones\",\r\n           \"cpf\": \"2222\",\r\n           \"telefone\": \"2222222\",\r\n           \"email\": \"isso@gmail.com\",\r\n           \"id_cliente\": 3\r\n        },\r\n        \"promocao\": {\r\n            \"destino_promo\": \"EUA\",\r\n            \"urlImage\": \"https://cdn2.civitatis.com/estados-unidos/nueva-york/guia/times-square-grid-m.jpg\",\r\n            \"descricao_promo\": \"Promoção imperdivel New York\",\r\n            \"preco_promo\": \"200.00\",\r\n            \"id_promo\": 2\r\n        },\r\n        \"id_pacode\": 20\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacotes/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacotes",
+						"20"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
